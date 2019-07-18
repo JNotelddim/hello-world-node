@@ -3,9 +3,12 @@
     "version": "0.0.1",
     "description": "ver simple node app which is just intended to give me basic experience with nodejs",
     "main": "app.js",
-    "scripts":{
-        "test" :"exho \"ERROR: no test specified\" && exit 1"
+    "scripts": {
+        "test": "exho \"ERROR: no test specified\" && exit 1"
     },
     "author": "jnotelddim",
-    "license": null
+    "license": null,
+    "dependencies": {
+        "express": "^4.17.1"
+    }
 }
