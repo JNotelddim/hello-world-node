@@ -1,6 +1,7 @@
 # hello-world-node
-Just a basic node app for an intro to node.js
+Just a basic Next.js app for an intro to node and react
 
-Using Express fw for REST apis
+was using Express to start a RESTful api, but have swapped into Next.js
+not intended to be anything amazing -- just following along their into tutorial so far
 
-to run: $> node app.js
+to run: $> npm run dev
