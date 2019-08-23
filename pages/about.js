@@ -1,10 +1,9 @@
-import Layout from '../comps/MyLayout';
+import Layout from '../components/MyLayout.js'
 
-export default function About(){
-    return (
-        <Layout>
-            <p>This is the about page.</p>
-            <p>I'm just fiddling with the Next.js fw to get a better understanding of nodejs and react :)</p>
-        </Layout>
-    );
+export default function About() {
+  return (
+    <Layout>
+      <p>This is the about page</p>
+    </Layout>
+  )
 }
