@@ -1,16 +1,19 @@
+import * as React from 'react'
+import Link from 'next/link'
+import Layout from '../components/Layout'
 import { NextPage } from 'next'
 
-interface Props {
-    userAgent?: string
+const IndexPage: NextPage = () => {
+  return (
+    <Layout title="Home | Next.js + TypeScript Example">
+      <h1>Hello Next.js 👋</h1>
+      <p>
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+      </p>
+    </Layout>
+  )
 }
 
-const Home: NextPage<Props> = ({userAgent}) => (
-    <h1>hello world! user agent: {userAgent}</h1>
-);
-
-Home.getInitialProps = async ({req}) => {
-    const userAgent = req ? req.headers['user.agent'] || '' : navigator.userAgent
-    return { userAgent }
-}
-
-export default Home
+export default IndexPage
